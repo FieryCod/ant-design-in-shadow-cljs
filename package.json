@@ -1,0 +1,21 @@
+{
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "antd": "^4.15.1",
+    "css-loader": "^5.2.1",
+    "less-loader": "^8.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.8",
+    "shadow-cljs": "^2.12.5",
+    "style-loader": "^2.0.0"
+  },
+  "scripts": {
+    "scss:watch": "sass public/scss/:public/css --style compressed --watch"
+  }
+}

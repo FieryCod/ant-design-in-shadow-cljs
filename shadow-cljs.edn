@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+;;
+{:deps true
+
+ :dev-http     {3003 {:root    "public"}}
+
+ :builds
+ {:web {:target     :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+        :js-options {:js-provider :external
+                     :external-index "public/js/index.js"}
+        :modules    {:app {:entries [web.app]
+                           :init-fn web.app/init!}}
+        :devtools   {:after-load    web.app/mount!
+                     :watch-dir     "public/css"}}}}
