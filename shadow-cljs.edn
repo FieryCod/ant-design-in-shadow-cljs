@@ -5,7 +5,7 @@
  :dev-http     {3003 {:root    "public"}}
 
  :builds
- {:web {:target     :browser
+ {:app {:target     :browser
         :output-dir "public/js"
         :asset-path "/js"
         :js-options {:js-provider :external
